@@ -1,0 +1,5 @@
+3.5 css pseudo classes list
+css pseudo element counter
+https://emojipedia.org/
+
+Responsive Web Design - Media Queries

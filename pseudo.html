@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.5 pseudoclass</title>
+    <style>
+        h1{
+            color: darkgreen;
+        }
+        /* h1:hover{
+            color: darkkhaki;
+            background-color: darkmagenta;
+            font-size: 40px;
+            } */
+         .spceal:hover{
+            color: darkkhaki;
+            background-color: darkmagenta;
+            font-size: 40px;
+            }
+            input:focus{
+                font-weight: 700;
+                font-size: 30px;
+                color: darkmagenta;
+            } 
+            li:nth-child(2n+1){
+                background-color: darkolivegreen;
+            } 
+            a:visited{
+                color: darkorange;
+            }
+            h1::before{
+                content:"Helo ";
+                color: darkslategrey;
+                font-size: 8px;
+                background-color: deeppink;
+            } 
+            .spaicir-element::after{
+                content: "bye ";
+                font-size: 15px;
+                background-color: deepskyblue;
+            }
+            body {
+            counter-reset: section;                       /* Set a counter named 'section', and its initial value is 0. */
+            }
+
+            p::before {
+            counter-increment: section;                   /* Increment the value of section counter by 1 */
+            content: "crush " counter(section) ": ";    /* Display the word 'Section ', the value of 
+                                                            section counter, and a colon before the content
+                                                            of each h3 */
+            }
+            p::after{
+                content: "❤️";
+            }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Holeo a add i,safifl</h1>
+        <h1 class="spaicir-element">Holeo a </h1>
+        <h1 class="spceal">Holeo</h1>
+    </section>
+    <input name="email" type="text">
+    <br>
+    <input name="password" type="text">
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F`</li>
+        <li>G</li>
+        <li>H</li>
+        <li>I</li>
+        <li>J</li>
+    </ul>
+    
+    <a href="www.google.com">googe</a>
+    <a href="www.yahoo.com">yahoo</a>
+
+    
+        <p>A</p>
+        <p>B</p>
+        <p>C</p>
+        <p>D</p>
+        <p>E</p>
+        <p>F`</p>
+        <p>G</p>
+     
+    
+</body>
+</html>
